@@ -12,7 +12,16 @@ function myFunction() {
        if(!isNaN(addme)) {       
           sum += addme;
           numbers++;
-       }
+     }
+      if (parseInt(table.rows[i].cells[x].innerHTML) < 0) {
+        alert("A number entered is less than 0 , Enter numbers only between 0 - 100 please");
+        table.rows[i].cells[x].innerHTML = "-";
+
+      } else if (parseInt(table.rows[i].cells[x].innerHTML) > 100) {
+        table.rows[i].cells[x].innerHTML = "-";
+        alert("A number enetered is greater than 100 , Enter numbers only between 0 - 100 please");
+
+      }
      }
      var average = sum / numbers;
      if(average<=40)

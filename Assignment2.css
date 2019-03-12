@@ -1,0 +1,88 @@
+table,
+th,
+td {
+  border: 1px solid #dddddd;
+  font-family: sans-serif;
+}
+
+#StudentName {
+  text-align: center;
+    border: 1px solid #dddddd;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  width: 100px;
+}
+
+#IDnumber {
+  text-align: center;
+    border: 1px solid #dddddd;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  width: 100px;
+}
+
+#Grades {
+  text-align: center;
+  border: 1px solid #dddddd;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  width: 100px;
+}
+
+ .button {
+  background-color: #4CAF50; /* Green varient */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.buttonRow {
+  background-color: #cc0000; /* yellow varient */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.buttonCol {
+  background-color: #ffb300; /* red varient */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.buttonSave {
+  background-color: #00ccff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.buttonLoad {
+  background-color: #ff3300;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.BoxSize {
+  border: 1px solid #dddddd;
+  font-family: sans-serif;
+  width: 100px;
+}

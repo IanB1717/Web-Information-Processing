@@ -1,0 +1,29 @@
+<table id="myTable" style="width:100%" font-family:sans-serif>
+
+<head>
+  <link rel="stylesheet" href="Assignment2.css">
+</head>
+<body>
+  <tr>
+    <th id="StudentName" bgcolor="FFFFFF">Name</th>
+    <th id="IDnumber" bgcolor="#FFFFFF">ID</th>
+    <th id="Grades" bgcolor="#FFFFFF">Assignment 1</th>
+    <th id="Grades" bgcolor="#FFFFFF">Final</th>
+  </tr>
+ 
+  <tr>
+    <td contenteditable='true' style="text-align:left">-</td>
+    <td style="text-align:left"contenteditable='true'>-</td>
+    <td style="text-align:right"contenteditable='true'>-</td>
+    <td style="text-align:right">-</td>
+  </tr>
+  </body>
+  </table>
+  
+  <button id="myFunction" class="button">Calculate grade</button>
+  <button onclick="addCol()" class="buttonCol">New Assignment</button>
+  <button onclick="addCol()" class="buttonRow">Add Row</button>
+  <button onClick="saveTab()" class="buttonSave">Save</button>
+  <button onClick="LoadTab()" class="buttonLoad">Load</button>
+  
+  <script src="Assignment2.js"></script>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<link rel=stylesheet type="text/css" href="style.css">
+		<meta charset="UTF-8"> 
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+
+	<body>
+<style>
+input{
+	margin:5px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+h1{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align-last: left;
+}
+form{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align-last: left;
+}
+body
+{
+	margin:0;
+	font-family: font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.button-style {
+  margin: auto;
+  display: block;
+  color: #33ccff;
+  background-color: black;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 24px;
+  padding: 10px 10px;
+  border: 2px #33ccff;
+  float: center;
+  border-radius: 75%;
+}
+</style>
+	
+		 <h1>Add A New Entry</h1>
+		<form id="createB">
+		  Name: <input type="text" name="name"placeholder="Enter Name"><br>
+		  URL: <input type="text" name="URL"placeholder="Enter the URL"><br>
+                  Description: <input type="text" name="description"placeholder="Enter A  Brief description"><br>
+		  <input class="button-style" id="create" type="submit" value="create">
+		</form> 
+
+		<div id="post_results"></div>
+
+
+
+
+		<h1>VIEW</h1>
+		<form id="ViewB">
+		 ID:<input placeholder="Enter ID to view" id="identifier" type="text" name="specific" value="">
+		  <br>
+		  <input class="button-style"id="view" type="submit" value="view">
+		</form> 
+
+		<div  type="json" id="get_results"></div>
+
+		<h1>UPDATE</h1>
+		<form id="UpdateB">
+			ID: <input type="text" name="id"placeholder="Enter ID to update"><br>
+Name: <input type="text" name="name"placeholder="Enter Name"><br>
+URL: <input type="text" name="URL"placeholder="Enter the URL"><br>
+Description: <input type="text" name="description"placeholder="Enter A  Brief description"><br>
+			<input class="button-style"id="update" type="submit" value="update">
+		</form> 
+
+		<div id="put_results"></div>
+
+		<h1>Delete</h1>
+		<form id="DeleteB">
+		ID: <input type="text" name="id"placeholder="Enter ID to delete"><br>
+			<input class="button-style"id="delete" type="submit" value="delete">
+		</form> 
+
+		<div id="del_results"></div>
+REST API based off: https://www.leaseweb.com/labs/2015/10/creating-a-simple-rest-api-in-php/
+
+	</body>
+</html>

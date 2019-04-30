@@ -36,5 +36,20 @@ if (!$result) {
   http_response_code(404);
   die(mysqli_error());
 }
+if ($method == 'GET') {
+  for ($i=0;$i<mysqli_num_rows($result);$i++) {
+    echo ($i>0?',<br>':'').json_encode(mysqli_fetch_object($result));
+  }
+}
+else if($method == 'PUT') {
+ echo "rows updated: ".mysqli_affected_rows($conn);
+}
+elseif ($method == 'POST') {
+ echo "<br>Successfully recorded:";
+ echo mysqli_insert_id($conn);
+} 
+else{
+  echo "rows deleted: ".mysqli_affected_rows($conn);
+}
 mysqli_close($conn);
 ?>
